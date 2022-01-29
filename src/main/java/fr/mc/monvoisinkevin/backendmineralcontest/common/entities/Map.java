@@ -1,4 +1,4 @@
-package fr.mc.monvoisinkevin.BackendMineralcontest.common.entities;
+package fr.mc.monvoisinkevin.backendmineralcontest.common.entities;
 
 import lombok.Data;
 

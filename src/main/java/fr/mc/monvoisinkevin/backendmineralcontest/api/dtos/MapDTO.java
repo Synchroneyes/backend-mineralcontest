@@ -1,4 +1,4 @@
-package fr.mc.monvoisinkevin.BackendMineralcontest.api.dtos;
+package fr.mc.monvoisinkevin.backendmineralcontest.api.dtos;
 
 import lombok.Data;
 

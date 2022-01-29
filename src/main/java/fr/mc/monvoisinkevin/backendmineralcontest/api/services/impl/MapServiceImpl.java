@@ -1,7 +1,7 @@
-package fr.mc.monvoisinkevin.BackendMineralcontest.api.services.impl;
+package fr.mc.monvoisinkevin.backendmineralcontest.api.services.impl;
 
-import fr.mc.monvoisinkevin.BackendMineralcontest.api.dtos.MapDTO;
-import fr.mc.monvoisinkevin.BackendMineralcontest.api.services.MapService;
+import fr.mc.monvoisinkevin.backendmineralcontest.api.dtos.MapDTO;
+import fr.mc.monvoisinkevin.backendmineralcontest.api.services.MapService;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
