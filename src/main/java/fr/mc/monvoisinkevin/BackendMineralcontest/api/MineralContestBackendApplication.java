@@ -1,4 +1,4 @@
-package fr.mc.monvoisinkevin.BackendMineralcontest;
+package fr.mc.monvoisinkevin.BackendMineralcontest.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
