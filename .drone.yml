@@ -12,8 +12,7 @@ steps:
     commands:
       - mvn clean  verify sonar:sonar -Dsonar.host.url=$SONARHOST -Dsonar.login=$SONARLOGIN
       - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-      - cp target/BackendMineralcontest-*.war .
-      - mv BackendMineralcontest-*.war BackendMineralcontest.war
+      - cp target/BackendMineralcontest.war .
 
   - name: copy files into server
     image: appleboy/drone-scp
