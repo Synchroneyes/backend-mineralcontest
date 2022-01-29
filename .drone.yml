@@ -1,6 +1,5 @@
 kind: pipeline
 name: deploiement
-type: ssh
 
 steps:
   - name: ssh commands
