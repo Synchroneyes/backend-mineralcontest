@@ -1,7 +1,6 @@
 kind: pipeline
 name: deploiement
 steps:
-
   - name: maven build
     image: maven:3.8.4-openjdk-11
     environment:
@@ -14,7 +13,7 @@ steps:
       - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
       - cp target/BackendMineralcontest.war .
 
-  - name: copy files into server
+  - name: deploy
     image: appleboy/drone-scp
     settings:
       host:
@@ -31,9 +30,5 @@ steps:
       script:
         - chown tomcat:tomcat /var/lib/tomcat9/webapps/BackendMineralcontest.war
         - systemctl restart tomcat9
-      trigger:
-        when:
-          branch:
-            - main
-          event:
-            - push
+    when:
+      branch: main
