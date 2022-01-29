@@ -13,5 +13,4 @@ steps:
         from_secret: ssh_key
     port: 22
     script:
-      - echo hello
-      - echo world
+      - echo "hello world"
