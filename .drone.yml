@@ -4,8 +4,14 @@ steps:
 
   - name: maven build
     image: maven:3.8.4-openjdk-17
+    environment:
+      sonar_host:
+        from_secret: sonar_host
+      sonar_login:
+        from_secret: sonar_token
+
     commands:
-      - mvn sonar:sonar -Dsonar.host.url=$sonar_host -Dsonar.login=$sonar_token
+      - mvn sonar:sonar -Dsonar.host.url=${sonar_host} -Dsonar.login=${sonar_token}
       - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
       - cp target/backendMineralcontest-*.war .
       - mv backendMineralcontest-*.war backendMineralcontest.war
