@@ -18,4 +18,4 @@ steps:
       branch:
         - master
       event:
-        - pull_request
+        - push
