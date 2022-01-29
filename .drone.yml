@@ -16,4 +16,4 @@ steps:
       - echo "hello world"
     when:
       branch:
-        master
+        - master
