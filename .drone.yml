@@ -5,8 +5,9 @@ steps:
     image: maven:3.8.4-openjdk-17
     commands:
       - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+      - cp target/backendMineralcontest-*.war .
 
-  - name: scp files
+  - name: copy files into server
     image: appleboy/drone-scp
     settings:
       host:
@@ -19,4 +20,4 @@ steps:
       command_timeout: 2m
       target: /root
       source:
-        - target/backendMineralcontest-*.war
+        - backendMineralcontest-*.war
