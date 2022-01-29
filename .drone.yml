@@ -33,4 +33,4 @@ steps:
         - systemctl restart tomcat9
       when:
         branch:
-          main
+          - main
