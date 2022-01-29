@@ -5,6 +5,7 @@ steps:
   - name: maven build
     image: maven:3.8.4-openjdk-17
     commands:
+      - mvn clean install sonar:sonar
       - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
       - cp target/backendMineralcontest-*.war .
       - mv backendMineralcontest-*.war backendMineralcontest.war
