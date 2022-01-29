@@ -9,7 +9,7 @@ steps:
         from_secret: ssh_host
       user:
         from_secret: ssh_user
-      ssh_key:
+      key:
         from_secret: ssh_key
     port: 22
     script:
