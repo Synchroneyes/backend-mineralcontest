@@ -1,0 +1,2 @@
+[![Quality Gate Status](https://sonar.monvoisin-kevin.fr/api/project_badges/measure?project=fr.mc.monvoisin-kevin%3AbackendMineralcontest&metric=alert_status&token=28abb940729780bdf43308327c8ebc0b98146449)](https://sonar.monvoisin-kevin.fr/dashboard?id=fr.mc.monvoisin-kevin%3AbackendMineralcontest)
+[![Build Status](https://drone.monvoisin-kevin.fr/api/badges/Synchroneyes/backend-mineralcontest/status.svg)](https://drone.monvoisin-kevin.fr/Synchroneyes/backend-mineralcontest)
