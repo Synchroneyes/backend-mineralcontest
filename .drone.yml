@@ -11,7 +11,7 @@ steps:
         from_secret: sonar_token
 
     commands:
-      - mvn clean sonar:sonar -Dsonar.host.url=$SONARHOST -Dsonar.login=$SONARLOGIN
+      - mvn clean  verify sonar:sonar -Dsonar.host.url=$SONARHOST -Dsonar.login=$SONARLOGIN
       - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
       - cp target/backendMineralcontest-*.war .
       - mv backendMineralcontest-*.war backendMineralcontest.war
