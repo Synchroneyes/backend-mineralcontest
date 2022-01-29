@@ -28,4 +28,4 @@ steps:
       command_timeout: 2m
       target: /var/lib/tomcat9/webapps/
       source:
-        - backendMineralcontest-*.war
+        - backendMineralcontest.war
