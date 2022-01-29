@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
+import java.util.Map;
 
 @RestController
 @SpringBootApplication
@@ -18,7 +19,7 @@ public class MineralContestBackendApplication extends SpringBootServletInitializ
 
 	@GetMapping("/api/getAllUrls")
 	@ResponseBody
-	public HashMap<String, String> currentUserName() {
+	public Map<String, String> currentUserName() {
 		HashMap<String, String> urls = new HashMap<>();
 		urls.put("api_workshop_list", "/api/workshop/list-files");
 		urls.put("api_last_version_check", "/api/plugin/check-version");
