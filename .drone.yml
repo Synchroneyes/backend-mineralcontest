@@ -5,7 +5,7 @@ steps:
   - name: maven build
     image: maven:3.8.4-openjdk-17
     commands:
-      - mvn clean verify sonar:sonar -Dsonar.host=https://sonar.monvoisin-kevin.fr/
+      - mvn sonar:sonar -Dsonar.host.url=https://sonar.monvoisin-kevin.fr/ -Dsonar.login=the-generated-token
       - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
       - cp target/backendMineralcontest-*.war .
       - mv backendMineralcontest-*.war backendMineralcontest.war
