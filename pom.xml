@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>fr.mc.monvoisin-kevin</groupId>
-	<artifactId>backendMineralcontest</artifactId>
+	<artifactId>BackendMineralcontest</artifactId>
 	<version>0.1</version>
 	<packaging>war</packaging>
 	<name>Mineral Contest Backend</name>
