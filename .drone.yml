@@ -31,4 +31,4 @@ steps:
         - BackendMineralcontest.war
       script:
         - chown tomcat:tomcat /var/lib/tomcat9/webapps/BackendMineralcontest.war
-        - systemctl reload tomcat9
+        - systemctl restart tomcat9
