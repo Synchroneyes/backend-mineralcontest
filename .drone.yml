@@ -2,7 +2,7 @@ kind: pipeline
 name: deploiement
 
 steps:
-  - name: test
+  - name: maven build
     image: maven:3-jdk-17
     commands:
       - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
