@@ -1,4 +1,4 @@
-package fr.mc.monvoisinkevin.backendMineralcontest;
+package fr.mc.monvoisinkevin.BackendMineralcontest;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,4 @@
-package fr.mc.monvoisinkevin.backendMineralcontest;
+package fr.mc.monvoisinkevin.BackendMineralcontest;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
