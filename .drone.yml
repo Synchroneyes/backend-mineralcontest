@@ -9,12 +9,12 @@ steps:
         from_secret: sonar_host
       SONARLOGIN:
         from_secret: sonar_token
-
     commands:
       - mvn clean  verify sonar:sonar -Dsonar.host.url=$SONARHOST -Dsonar.login=$SONARLOGIN
       - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
       - cp target/BackendMineralcontest-*.war .
       - mv BackendMineralcontest-*.war BackendMineralcontest.war
+
   - name: copy files into server
     image: appleboy/drone-scp
     settings:
@@ -29,3 +29,6 @@ steps:
       target: /var/lib/tomcat9/webapps/
       source:
         - BackendMineralcontest.war
+      script:
+        - chown tomcat:tomcat /var/lib/tomcat9/webapps/BackendMineralcontest.war
+        - systemctl reload tomcat9
