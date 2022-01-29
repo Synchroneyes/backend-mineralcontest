@@ -31,6 +31,6 @@ steps:
       script:
         - chown tomcat:tomcat /var/lib/tomcat9/webapps/BackendMineralcontest.war
         - systemctl restart tomcat9
-      when:
+      trigger:
         branch:
           - main
