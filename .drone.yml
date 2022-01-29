@@ -1,0 +1,18 @@
+kind: pipeline
+name: deploiement
+type: ssh
+
+steps:
+  - name: ssh commands
+    image: appleboy/drone-ssh
+    settings:
+      host:
+        from_secret: ssh_host
+      user:
+        from_secret: ssh_user
+      ssh_key:
+        from_secret: ssh_key
+    port: 22
+    script:
+      - echo hello
+      - echo world
