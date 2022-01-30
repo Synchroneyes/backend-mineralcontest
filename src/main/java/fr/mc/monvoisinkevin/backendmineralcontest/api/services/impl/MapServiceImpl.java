@@ -17,23 +17,23 @@ public class MapServiceImpl implements MapService {
         ArrayList<MapDTO> list = new ArrayList<>();
         MapDTO map = new MapDTO();
 
-        map.setMap_name("Ma Map");
-        map.setMap_size(12471545184L);
-        map.setMap_url("http://lol/fr");
-        map.setMap_folder_name("folderName");
-        map.setMap_file_name("map.zip");
-        map.setMap_size_display("1234Mo");
-        map.setMap_description("Description");
+        map.setMapName("Ma Map");
+        map.setMapSize(12471545184L);
+        map.setMapUrl("http://lol/fr");
+        map.setMapFolderName("folderName");
+        map.setMapFileName("map.zip");
+        map.setMapSizeDisplay("1234Mo");
+        map.setMapDescription("Description");
 
         list.add(map);
 
-        map.setMap_name("Ma Map");
-        map.setMap_size(12471545184L);
-        map.setMap_url("http://lol/fr");
-        map.setMap_folder_name("folderName");
-        map.setMap_file_name("map.zip");
-        map.setMap_size_display("1234Mo");
-        map.setMap_description("Description");
+        map.setMapName("Ma Map");
+        map.setMapSize(12471545184L);
+        map.setMapUrl("http://lol/fr");
+        map.setMapFolderName("folderName");
+        map.setMapFileName("map.zip");
+        map.setMapSizeDisplay("1234Mo");
+        map.setMapDescription("Description");
 
         list.add(map);
         return list;

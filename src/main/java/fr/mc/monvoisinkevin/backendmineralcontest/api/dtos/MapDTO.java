@@ -6,19 +6,19 @@ import lombok.Data;
 public class MapDTO {
 
 
-    private String map_name;
+    private String mapName;
 
-    private String map_url;
+    private String mapUrl;
 
-    private String map_description;
+    private String mapDescription;
 
-    private String map_size_display;
+    private String mapSizeDisplay;
 
-    private Long map_size;
+    private Long mapSize;
 
-    private String map_file_name;
+    private String mapFileName;
 
-    private String map_folder_name;
+    private String mapFolderName;
 
 
 }
